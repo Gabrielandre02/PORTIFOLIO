@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Web Site</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Portfolio Gabriel</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="profile box">
-          <img class="profile-pic" src="/image/shau.png" alt="Profile" />
-          <h1 class="title">Gabriel Andre</h1>
-          <span>Curitiba, Brasil</span>
-          <p> Data Science | Devops </p>
-          <ul class="redes-sociais">
-            <li>
-              <a href="#"><img src="/image/github.png" alt="GitHub" class="darkmode-ignore"/></a>
-            </li>
-            <li>
-              <a href="#"><img src="/image/linkedin.png" alt="LinkedIn" class="darkmode-ignore"/></a>
-            </li>
-            <li>
-              <a href="#"><img src="/image/medium.png" alt="Medium" class="darkmode-ignore"/></a>
-            </li>
-          </ul>
-        </div>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <!--MENU-->
+  <header> 
+     
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Escolaridade</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
         const options = 
         {
-        bottom: '50px', // default: '32px'
+        bottom: '54px', // default: '32px'
         right: 'unset', // default: '32px'
         left: '24px', // default: 'unset'
         time: '0.9s', // default: '0.3s'
@@ -39,12 +33,23 @@
         backgroundColor: '#fff',  // default: '#fff'
         buttonColorDark: '#000000',  // default: '#100f2c'
         buttonColorLight: '#fff', // default: '#fff'
-        saveInCookies: true, // default: true,
+        saveInCookies: false, // default: true,
         label: '🌓', // default: ''
         autoMatchOsTheme: true // default: true
         }
         const darkmode = new Darkmode(options);
         darkmode.showWidget();
     </script>
+
+
+
+
+
+
+
+   
+
+   
+    
 </body>
 </html>
