@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,900&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'nunito', sans-serif;
+   
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li { 
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color:rgb(236, 76, 27);
+    font-size: 150%;
+    border-radius: 20px;
+} 
+
+header ul li a:hover,
+header ul li a.active { 
+    background: rgba(114, 104, 104, 0.144);
+    color: rgb(196, 29, 43)
+}
+
+    
