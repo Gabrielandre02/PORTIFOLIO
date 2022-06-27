@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <link rel="stylesheet" type="text/css" href="/css/color.css">
 </head>
+
 <body>
-    <div class="portfolio box">
-        <h1 class="title">Portfólio</h1>
-        <ul>
-          <li>
-            <img src="img/1.jpg" alt="1" />
-            <div>
-              <h2>Colar nome  do projeto/artigo</h2>
-              <p>
-               Escrever sobre....
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="img/2.jpg" alt="2" />
-            <div>
-              <h2>Design de Interface</h2>
-              <p>
-                Escrever sobre....
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="img/3.jpg" alt="3" />
-            <div>
-              <h2>Colar nome  do projeto/artigo</h2>
-              <p>
-                Escrever sobre....
-              </p>
-            </div>
-          </li>
-        </ul>
+  <header>
+    <div class="logo">
+        <h1>Seja Bem Vindo Ao Meu Portfolio</h1>
+    </div>
+     <!-- ======== script seja bem vindo ========== -->
+     <script>
+      function typeWrite(elemento) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML= '';
+        textoArray.forEach((letra, i) => {
+          setTimeout(() => elemento.innerHTML += letra, 75 * i);
+        });
+      }
+      const titulo = document.querySelector('h1');
+      typeWrite(titulo);
+     </script>
+    <div class="menu"></div>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="portifolio.html" class="active">Projetos</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        <h2>01</h2>
+        <h3>Card Um</h3>
+        <p>Vamos la testar essa coisa e ver se funciona</p>
+        <a href="#">Mais informaçoes</a>
       </div>
-      <p class="copyright">© 2022 Gabriel Andre</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        const options = 
-        {
-        bottom: '54px', // default: '32px'
-        right: 'unset', // default: '32px'
-        left: '24px', // default: 'unset'
-        time: '0.9s', // default: '0.3s'
-        mixColor: '#fff', // default: '#fff'
-        backgroundColor: '#fff',  // default: '#fff'
-        buttonColorDark: '#000000',  // default: '#100f2c'
-        buttonColorLight: '#fff', // default: '#fff'
-        saveInCookies: false, // default: true,
-        label: '🌓', // default: ''
-        autoMatchOsTheme: true // default: true
-        }
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-    </script>
+    <div class="card">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Card Dois</h3>
+        <p>Vamos la testar essa coisa e ver se funciona</p>
+        <a href="#">Mais informaçoes</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Card tres</h3>
+        <p>Vamos la testar essa coisa e ver se funciona</p>
+        <a href="#">Mais informaçoes</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    const options = {
+      bottom: '54px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '24px', // default: 'unset'
+      time: '0.9s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff', // default: '#fff'
+      buttonColorDark: '#000000', // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    }
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+  </script>
+  <script type="text/javascript" src="/Js/vanilla-tilt.js"></script>
+  <script >
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed:400,
+      glare:true,
+      "max-glare":1,
+    });
+  </script>
 </body>
+
 </html>
