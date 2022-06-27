@@ -5,51 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gabriel</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <!--====== CSS FILES ======== -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-  <!--MENU-->
-  <header> 
-     
+  <!-- ======== Menu ========== -->
+  <header>
+    <div class="logo">
+        <h1>Ola Seja Bem Vindo</h1>
+    </div>
+    <div class="menu"></div>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Escolaridade</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="portifolio.html">Projetos</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
-    
+    </div>
   </header>
+<!-- ======== caixas pagina inicial ========== -->
+  <div class="container">
+    <!-- ======== caixa primaria ========== -->
+    <div class="profile box">
+      <h1 class="title">Gabriel A. M. Carmo</h1>
+      <span>CURITIBA, Brasil</span>
+      <p>DEV PYTHON | DEVOPS | ZABBIX</p>
+      <ul class="redes-sociais">
+        <li>
+          <a href="#"><img src="/image/github.png" alt="github" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/image/linkedin.png" alt="linkedin" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/image/medium.png" alt="Medium" /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- ======== caixa secundaria ========== -->
+    <div class="portfolio box">
+      <h1 class="title">....</h1>
+      <ul>
+        <li>
+          <img src="img/1.jpg" alt="1" />
+          <div>
+            <h2>Projetos</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/2.jpg" alt="2" />
+          <div>
+            <h2>Sobre Mim</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/3.jpg" alt="3" />
+          <div>
+            <h2>Contato</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="copyright">© 2022 Gabriel Andre</p>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        const options = 
-        {
-        bottom: '54px', // default: '32px'
-        right: 'unset', // default: '32px'
-        left: '24px', // default: 'unset'
-        time: '0.9s', // default: '0.3s'
-        mixColor: '#fff', // default: '#fff'
-        backgroundColor: '#fff',  // default: '#fff'
-        buttonColorDark: '#000000',  // default: '#100f2c'
-        buttonColorLight: '#fff', // default: '#fff'
-        saveInCookies: false, // default: true,
-        label: '🌓', // default: ''
-        autoMatchOsTheme: true // default: true
-        }
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-    </script>
+<!-- ======== importando java script ========== -->
+<script type="text/javascript" src="/Js/vanilla-tilt.js"></script>
+<script type="text/javascript" src="/Js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
+<!-- ======== chamando script efeito digitando ========== -->
+<script>
+typeWrite(document.querySelector('span'));
+typeWrite(document.querySelector('p'));
+typeWrite(document.querySelector('h1'));
+</script>
+<!-- ======== Efeito Box se Movendo ========== -->
+<script >
+  VanillaTilt.init(document.querySelectorAll(".box"));
+</script>
 
-
-
-
-
-
-   
-
-   
-    
 </body>
 </html>
