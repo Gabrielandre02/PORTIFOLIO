@@ -126,13 +126,13 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
-  color:rgba(254, 254, 254, 0.887);
+  color:rgba(255, 255, 255, 0.887);
   font-size: 150%;
   border-radius: 20px;
 } 
 
 header ul li a:hover,
 header ul li a.active { 
-  background: rgba(114, 104, 104, 0.144);
+  background: rgba(255, 255, 255, 0.1);
   color: rgb(255, 119, 0)
 }
