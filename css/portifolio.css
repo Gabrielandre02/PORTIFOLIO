@@ -7,7 +7,6 @@
 }
 
 body{
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -35,13 +34,13 @@ body{
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.96);
+    border-left: 1px solid rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(2px);
 }
 
@@ -50,7 +49,7 @@ body{
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
-    transition: 0.5s
+    transition: 0.7s
 }
 .container .card:hover .content{
     transform: translateY(0px);
@@ -61,78 +60,40 @@ body{
     position: absolute;
     top: -80px;
     right: 30px;
-    font-size: 8em;
-    color: rgba(23, 245, 253, 0.097);
+    font-size: 1em;
+    color: rgba(250, 250, 250, 0.444);
     pointer-events: none;
 }
 
 .container .card .content h3{
-    font-size: 1.8em;
-    color: rgba(255, 179, 65, 0.673);
+    font-size: 1.5em;
+    color: rgb(5, 230, 255);
     z-index: 1;
 }
 
 
 .container .card .content p{
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    font-weight: 300;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    font-weight: 350;
 }
 
 .container .card .content a{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
-    margin-top: 15px;
-    background: rgb(0, 0, 0);
-    color: black;
+    margin-top: 10px;
+    background: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 20px;
     font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgb(5, 230, 255);
 }
-
-
-
-header .logo {
-  max-width: 700px;
-  font-family:'Courier New', Courier, monospace;
-  color: rgb(255, 255, 255);
-}
-
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:90%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header ul li { 
-  list-style: none;
-  margin-left: 20px;
-}
-
-header ul li a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color:rgba(255, 255, 255, 0.887);
-  font-size: 150%;
-  border-radius: 20px;
-} 
-
-header ul li a:hover,
-header ul li a.active { 
-  background: rgba(255, 255, 255, 0.1);
-  color: rgb(255, 119, 0)
+.copyright {
+    font-size: 24px;
+    color:rgb(5, 230, 255);
+    margin-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
 }
