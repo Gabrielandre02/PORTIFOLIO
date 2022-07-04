@@ -1,49 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@1,900&family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'nunito', sans-serif;
-   
-}
+/* caixas da pagina inicial */
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul {
+body {
+    background: url(/image/alo.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-items: center;
+    height: 100vh;
+  }
+  
+  img {
+    display: block;
+    max-width: 55%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+  
+  .caixa {
+    background: rgba(208, 208, 207, 0.028);
+    padding: 3rem;
+    box-shadow: 6px 1px 44px rgb(5, 230, 255);
+    border-radius: 60px;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  
+  .profile {
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .profile span {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .profile p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .redes-sociais {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-header ul li { 
-    list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color:rgb(236, 76, 27);
-    font-size: 150%;
-    border-radius: 20px;
-} 
-
-header ul li a:hover,
-header ul li a.active { 
-    background: rgba(114, 104, 104, 0.144);
-    color: rgb(196, 29, 43)
-}
-
-    
+  }
+  
+  .redes-sociais li {
+    margin-right: 0rem;
+  }
+  
+  .copyright {
+    font-size: 24px;
+    color:rgb(5, 230, 255);
+    margin-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
+  }
+  
+  /* ------------- */
