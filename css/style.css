@@ -15,5 +15,45 @@ body {
   padding-bottom: 50vh;
   text-align: center;
 }
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.caixa {
+  background: rgba(208, 208, 207, 0.028);
+  padding: 3rem;
+  box-shadow: 6px 1px 44px rgb(5, 230, 255);
+  border-radius: 60px;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.profile {
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.profile h2 {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.profile p {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 
 /* ------------- */
