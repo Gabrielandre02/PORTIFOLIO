@@ -1,16 +1,7 @@
 /* caixas da pagina inicial */
-
-body {
-    background: url(/image/alo.jpg) no-repeat top center;
-    background-attachment: fixed;
-    background-size: cover;
-    justify-items: center;
-    height: 100vh;
-  }
-  
   img {
     display: block;
-    max-width: 55%;
+    max-width: 65%;
   }
   
   li {
@@ -19,6 +10,7 @@ body {
   
   .container {
     padding: 0 10px;
+    margin-top: 10rem;
   }
   
   .title {
@@ -30,10 +22,11 @@ body {
   .caixa {
     background: rgba(208, 208, 207, 0.028);
     padding: 3rem;
-    box-shadow: 6px 1px 44px rgb(5, 230, 255);
+    box-shadow: 6px 1px 44px rgba(4, 28, 31, 0.686);
     border-radius: 60px;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 0rem;
+    padding: 3rem;
   }
   
   .profile {
@@ -43,13 +36,14 @@ body {
   }
   
   .profile span {
-    font-size: 24px;
-    color: #ffffff;
+    font-size: 18px;
+    color: rgb(255, 130, 5);
+    margin-top: 4rem;
   }
   
   .profile p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
@@ -61,14 +55,6 @@ body {
   
   .redes-sociais li {
     margin-right: 0rem;
-  }
-  
-  .copyright {
-    font-size: 24px;
-    color:rgb(5, 230, 255);
-    margin-top: 50vh;
-    padding-bottom: 50vh;
-    text-align: center;
   }
   
   /* ------------- */
