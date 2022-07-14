@@ -1,7 +1,14 @@
 /* caixas da pagina inicial */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+}
 
 body {
-  background: url(/image/alo.jpg) no-repeat top center;
+  background: url(/image/alo.png) no-repeat top center;
   background-attachment: fixed;
   background-size: cover;
   justify-items: center;
@@ -10,50 +17,74 @@ body {
 
 .copyright {
   font-size: 24px;
-  color:rgb(5, 230, 255);
+  color:rgb(255, 130, 5);
   margin-top: 50vh;
   padding-bottom: 50vh;
   text-align: center;
 }
-li {
-  list-style: none;
+
+
+/* ------  MENU ------- */
+
+.nav-button{
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: rgba(71, 71, 71, 0.06);
+  margin: 8px;
+  cursor: pointer;
+}
+.nav-button i {
+  color: rgb(255, 130, 5);
+  position: right;
 }
 
-.container {
-  padding: 0 10px;
+.overlay{
+  height: 100%;
+  width: 0;
+  background-color: rgba(3, 29, 37, 0.629);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
 }
 
-.title {
-  font-size: 30px;
-  font-weight: normal;
+.overlay-content{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.overlay a{
+  padding: 8px;
+  text-decoration: none;
   color: #ffffff;
+  display: block;
+  font-size: 25px;
+  transition: 0.5s;
 }
 
-.caixa {
-  background: rgba(208, 208, 207, 0.028);
-  padding: 3rem;
-  box-shadow: 6px 1px 44px rgb(5, 230, 255);
-  border-radius: 60px;
-  text-align: center;
-  margin-top: 10rem;
+.overlay a:hover, .overlay a:focus{
+  color: rgb(255, 130, 5);
+
 }
 
-.profile {
-  max-width: 600px;
-  box-sizing: border-box;
-  margin: 0 auto;
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.profile h2 {
-  font-size: 20px;
-  color: #ffffff;
+@media screen and (max-height: 450px) {
+  .overlay a{ font-size: 20px; }
+  .overlay, .closebtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
-
-.profile p {
-  color: #ffffff;
-  font-size: 14px;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-/* ------------- */

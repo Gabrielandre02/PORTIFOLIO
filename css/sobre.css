@@ -1,0 +1,64 @@
+.container {
+    padding: 0 10px;
+    margin-top: 10rem;
+  }
+
+.caixa {
+    background: rgba(208, 208, 207, 0.028);
+    padding: 3rem;
+    box-shadow: 6px 1px 44px rgba(4, 28, 31, 0.686);
+    border-radius: 60px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+.profile{
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .al{
+    margin-top: 4rem;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .profile p {
+    color: #ffffff;
+    font-size: 17px;
+  }
+  
+  .container span{
+    color:rgb(255, 130, 5);
+    margin-top: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+.profile h2 {
+  color: rgb(255, 130, 5);
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+  .profile h3 {
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  
