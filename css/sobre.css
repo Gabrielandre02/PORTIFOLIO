@@ -12,18 +12,29 @@
     padding: 2rem;
   }
 
+  .ini{
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+}
 .profile{
-    max-width: 900px;
+    max-width: 1500px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-
+  .alo{
+    color: rgb(255, 130, 5);
+    font-size: 35px;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+  }
   .al{
     margin-top: 4rem;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: normal;
     color: #ffffff;
     margin-left: 1rem;
@@ -33,6 +44,7 @@
   .profile p {
     color: #ffffff;
     font-size: 17px;
+    text-align: justify;
   }
   
   .container span{
@@ -44,7 +56,7 @@
 
 .profile h2 {
   color: rgb(255, 130, 5);
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 1rem;
   text-align: center;
   margin-top: 1rem;
